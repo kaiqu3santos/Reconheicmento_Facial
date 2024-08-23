@@ -7,6 +7,9 @@ This Python script implements a real-time facial recognition system using OpenCV
 * Comparing detected faces with a database of known faces.
 * Displaying the recognized person's name on the video frame.
 
+![image](https://github.com/user-attachments/assets/f9c70064-82b1-4483-ab18-3f08ad15ee57)
+
+
 ## Requirements
 * Python 3.x
 * OpenCV
