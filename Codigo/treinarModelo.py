@@ -20,7 +20,7 @@ def train_model():
                 #print(encodings[0])
 
     # Salve as codificações e os IDs em um arquivo
-    with open('trained_model.pkl', 'wb') as model_file:
+    with open(r'.\modelos\trained_model.pkl', 'wb') as model_file:
         pickle.dump({'encodings': known_encodings, 'ids': known_ids}, model_file)
     
     print("Modelo treinado e salvo como 'trained_model.pkl'.")
