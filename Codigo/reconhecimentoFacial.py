@@ -7,10 +7,10 @@ import os
 import threading
 
 # Carregar o modelo de pontos de referência faciais do dlib
-shape_predictor = dlib.shape_predictor(r"C:\Users\Callidus\Documents\faculdade\topicos3\trabalho2\shape_predictor_68_face_landmarks.dat")
+shape_predictor = dlib.shape_predictor(r".\modelos\shape_predictor_68_face_landmarks.dat")
 
 # Carregar o modelo de reconhecimento facial do dlib
-face_recognition_model = dlib.face_recognition_model_v1(r"C:\Users\Callidus\Documents\faculdade\topicos3\trabalho2\dlib_face_recognition_resnet_model_v1.dat")
+face_recognition_model = dlib.face_recognition_model_v1(r".\modelos\dlib_face_recognition_resnet_model_v1.dat")
 
 # Função para carregar o modelo treinado
 def load_trained_model(model_file):
@@ -19,7 +19,7 @@ def load_trained_model(model_file):
     return model_data['encodings'], model_data['ids']
 
 # Carregar o modelo treinado com as codificações conhecidas e IDs correspondentes
-trained_model_file = 'trained_model.pkl'
+trained_model_file = r'.\modelos\trained_model.pkl'
 known_face_encodings, known_face_names = load_trained_model(trained_model_file)
 face_names = ['Desconhecido', 'Kaique', 'Velma']
 
